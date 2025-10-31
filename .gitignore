@@ -1,41 +1,70 @@
-# Prerequisites
-*.d
+```
+# Compiled and build artifacts
+*.pyc
+__pycache__/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Dependencies
+.venv/
+venv/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Logs and temp files
+*.log
+*.tmp
+*.swp
 
-# Linker files
-*.ilk
+# Environment
+.env
+.env.local
+*.env.*
 
-# Debugger Files
-*.pdb
+# Editors
+.vscode/
+.idea/
 
-# Compiled Dynamic libraries
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Python specific
+*.pyo
+*.pyd
+.Python
 *.so
-*.dylib
-*.dll
+*.egg-info/
 
-# Fortran module files
-*.mod
-*.smod
+# Distribution / packaging
+dist/
+build/
+*.egg
+*.whl
+*.tar.gz
+*.zip
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# IDE specific
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-# Executables
-*.exe
-*.out
-*.app
+# Testing
+.pytest_cache/
+.mypy_cache/
+.tox/
 
-# debug information files
-*.dwo
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Git submodules
+submodules/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+```
