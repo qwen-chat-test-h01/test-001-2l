@@ -1,41 +1,45 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+```
+# Compiled and build artifacts
+*.pyc
+__pycache__/
 *.o
 *.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+# Dependencies
+.venv/
+venv/
+node_modules/
 
-# Linker files
-*.ilk
+# Logs and temp files
+*.log
+*.tmp
+*.swp
 
-# Debugger Files
-*.pdb
+# Environment
+.env
+.env.local
+*.env.*
 
-# Compiled Dynamic libraries
+# Editors
+.vscode/
+.idea/
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Python specific
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
 *.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# Distribution / packaging
+.Python
+*.so
+.libs/
+.pyx
+```
