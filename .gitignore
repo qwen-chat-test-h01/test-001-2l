@@ -1,3 +1,4 @@
-(bubble_sort.py is a source file, so no changes needed to .gitignore)
-
-(empty - output nothing)
+```
+# Image files
+*.svg
+```
