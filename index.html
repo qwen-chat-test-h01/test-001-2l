@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新鲜水果网</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🍎 新鲜水果网 🍊</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#fruits">水果列表</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>享受大自然的甜美馈赠</h2>
+                <p>我们提供最新鲜、最健康的水果，直接从果园到您的餐桌。</p>
+                <button class="cta-button">开始选购</button>
+            </div>
+        </section>
+
+        <section id="fruits" class="fruits-section">
+            <div class="container">
+                <h2>我们的水果</h2>
+                <div class="fruits-grid">
+                    <div class="fruit-card">
+                        <img src="https://images.unsplash.com/photo-1570998050878-4cb3bcab8c6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="苹果">
+                        <h3>苹果</h3>
+                        <p>新鲜脆甜的苹果，富含维生素和纤维素</p>
+                        <span class="price">¥12.9/kg</span>
+                        <button class="add-to-cart">加入购物车</button>
+                    </div>
+                    
+                    <div class="fruit-card">
+                        <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="香蕉">
+                        <h3>香蕉</h3>
+                        <p>营养丰富的香蕉，是能量补充的最佳选择</p>
+                        <span class="price">¥8.5/kg</span>
+                        <button class="add-to-cart">加入购物车</button>
+                    </div>
+                    
+                    <div class="fruit-card">
+                        <img src="https://images.unsplash.com/photo-1583391448059-a027cff8332e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="橙子">
+                        <h3>橙子</h3>
+                        <p>富含维C的橙子，酸甜可口，增强免疫力</p>
+                        <span class="price">¥15.8/kg</span>
+                        <button class="add-to-cart">加入购物车</button>
+                    </div>
+                    
+                    <div class="fruit-card">
+                        <img src="https://images.unsplash.com/photo-1560769684-8ec07d7f7aab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="草莓">
+                        <h3>草莓</h3>
+                        <p>鲜美多汁的草莓，香甜口感让人难以抗拒</p>
+                        <span class="price">¥25.0/kg</span>
+                        <button class="add-to-cart">加入购物车</button>
+                    </div>
+                    
+                    <div class="fruit-card">
+                        <img src="https://images.unsplash.com/photo-1523206489230-c0a9dc6d1e6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="葡萄">
+                        <h3>葡萄</h3>
+                        <p>晶莹剔透的葡萄，富含抗氧化物质</p>
+                        <span class="price">¥18.5/kg</span>
+                        <button class="add-to-cart">加入购物车</button>
+                    </div>
+                    
+                    <div class="fruit-card">
+                        <img src="https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="猕猴桃">
+                        <h3>猕猴桃</h3>
+                        <p>富含维C的猕猴桃，酸甜开胃，促进消化</p>
+                        <span class="price">¥22.0/kg</span>
+                        <button class="add-to-cart">加入购物车</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>关于我们</h2>
+                <p>我们是一家专注于提供新鲜优质水果的在线商店。自成立以来，我们一直致力于为顾客提供从果园直接采购的新鲜水果，确保每一颗水果都达到最高的品质标准。</p>
+                <p>我们与各地果农建立长期合作关系，采用先进的保鲜技术，让新鲜水果在最佳状态下送到您手中。</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>联系我们</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="您的邮箱" required>
+                    <textarea placeholder="您的留言" rows="5" required></textarea>
+                    <button type="submit">发送消息</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 新鲜水果网. 版权所有.</p>
+            <div class="social-links">
+                <a href="#">微信</a>
+                <a href="#">微博</a>
+                <a href="#">QQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
