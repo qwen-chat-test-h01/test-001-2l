@@ -1,70 +1,96 @@
-# test-001-2l
+# Python 正弦波与 SVG 圆柱体生成项目
 
 ## 项目简介
-本项目包含一个灵活的 Java 加法计算器，支持任意两个整数的加法运算，默认演示 `1 + 2 = 3`。
+本项目包含两个独立的示例：
+1. 使用 Python 生成正弦波图像
+2. 使用 SVG 绘制三维圆柱体
 
 ## 文件结构
-- `FlexibleAddition.java` - 主程序文件，包含灵活的加法计算方法
-- `SimpleAddition.java` - 基础版本，仅实现固定的 1+2=3 功能
+- `sine_wave.py` - Python 脚本，生成正弦波图像
+- `cylinder.svg` - SVG 文件，展示三维圆柱体效果
 - `README.md` - 项目说明文档（本文件）
-- `LICENSE` - 开源许可证
 
 ## 功能特性
-- ✅ **基础加法**：计算任意两个整数的和
-- ✅ **可变参数**：支持多个整数同时相加
-- ✅ **格式化输出**：美观打印加法表达式（如 `1 + 2 = 3`）
-- ✅ **灵活调用**：可在其他程序中复用 `add()` 方法
+
+### 1. 正弦波生成 (sine_wave.py)
+- ✅ **精确计算**：使用 NumPy 生成高精度的正弦波数据
+- ✅ **平滑曲线**：1000 个采样点确保波形平滑
+- ✅ **美观展示**：包含标题、坐标轴标签、网格和图例
+- ✅ **π刻度**：x 轴以 π的倍数显示（0, π/2, π, 3π/2, 2π）
+- ✅ **高清输出**：保存为 300 DPI 的 PNG 图片
+
+### 2. SVG 圆柱体 (cylinder.svg)
+- ✅ **渐变效果**：线性渐变模拟圆柱侧面光影
+- ✅ **立体顶部**：径向渐变创建椭圆形顶面的立体感
+- ✅ **细节丰富**：包含高光、阴影和底部轮廓线
+- ✅ **矢量图形**：可无限缩放而不失真
+- ✅ **浏览器兼容**：所有现代浏览器均可直接查看
 
 ## 快速开始
 
-### 编译代码
+### 运行正弦波脚本
 ```bash
-javac FlexibleAddition.java
+# 安装依赖
+pip install numpy matplotlib
+
+# 运行脚本
+python sine_wave.py
 ```
 
-### 运行程序
-```bash
-java FlexibleAddition
+**预期输出：**
+```
+正弦波图像已保存为 sine_wave.png
 ```
 
-### 预期输出
-```
-=== 基础演示 ===
-1 + 2 = 3
-
-=== 灵活调用 ===
-5 + 7 = 12
-100 + 250 = 350
-
-=== 多数相加 ===
-1 + 2 + 3 + 4 + 5 = 15
-
-=== 链式计算 ===
-(1 + 2) + (3 + 4) = 10
-```
+### 查看圆柱体
+直接用浏览器打开 `cylinder.svg` 文件即可查看效果。
 
 ## 代码示例
 
-### 基本用法
-```java
-int result = FlexibleAddition.add(1, 2);  // 返回 3
-System.out.println("1 + 2 = " + result);
+### 正弦波核心代码
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 生成数据
+x = np.linspace(0, 2 * np.pi, 1000)
+y = np.sin(x)
+
+# 绘制图形
+plt.plot(x, y, 'b-', linewidth=2)
+plt.savefig('sine_wave.png', dpi=300)
 ```
 
-### 多数相加
-```java
-int sum = FlexibleAddition.add(1, 2, 3, 4, 5);  // 返回 15
+### SVG 圆柱体核心代码
+```svg
+<!-- 圆柱体主体 -->
+<rect x="75" y="100" width="150" height="250" 
+      fill="url(#cylinderGradient)"/>
+
+<!-- 顶部椭圆 -->
+<ellipse cx="150" cy="100" rx="75" ry="30" 
+         fill="url(#topGradient)"/>
 ```
 
-### 格式化输出
-```java
-FlexibleAddition.printAddition(10, 20);  // 输出：10 + 20 = 30
+## 依赖项
+
+### Python 环境
+```bash
+pip install numpy matplotlib
 ```
+
+### 浏览器
+任何现代浏览器（Chrome、Firefox、Edge、Safari 等）均可查看 SVG 文件。
+
+## 输出文件
+- `sine_wave.png` - 生成的正弦波图像（PNG 格式，300 DPI）
+- `cylinder.svg` - SVG 圆柱体矢量图形
 
 ## 技术栈
-- **语言**：Java 8+
-- **编译工具**：javac
-- **运行环境**：JRE 8+
+- **Python**: 用于科学计算和可视化
+- **NumPy**: 数值计算库
+- **Matplotlib**: 绘图库
+- **SVG**: 可缩放矢量图形标准
 
 ## 许可证
-本项目采用 MIT 许可证。详见 [LICENSE](LICENSE) 文件。
+本项目采用 MIT 许可证。
