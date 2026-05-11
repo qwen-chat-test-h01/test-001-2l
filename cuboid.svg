@@ -1,0 +1,62 @@
+<svg width="300" height="250" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义渐变 -->
+  <defs>
+    <!-- 顶面渐变 (最亮) -->
+    <linearGradient id="topGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8d4e8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 左侧面渐变 (中等亮度) -->
+    <linearGradient id="leftGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7fa8c8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a8ab8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 右侧面渐变 (最暗) -->
+    <linearGradient id="rightGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a7aa8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5a88;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="250" fill="#f5f5f5"/>
+  
+  <!-- 长方体组 -->
+  <g transform="translate(50, 50)">
+    <!-- 左侧面 (平行四边形) -->
+    <polygon 
+      points="0,60 80,20 80,140 0,180" 
+      fill="url(#leftGradient)" 
+      stroke="#3a6a98" 
+      stroke-width="1.5"
+    />
+    
+    <!-- 右侧面 (平行四边形) -->
+    <polygon 
+      points="80,20 200,60 200,180 80,140" 
+      fill="url(#rightGradient)" 
+      stroke="#2a5a88" 
+      stroke-width="1.5"
+    />
+    
+    <!-- 顶面 (平行四边形) -->
+    <polygon 
+      points="0,60 80,20 200,60 120,100" 
+      fill="url(#topGradient)" 
+      stroke="#98b8d8" 
+      stroke-width="1.5"
+    />
+    
+    <!-- 强调边缘线 (可选，增加立体感) -->
+    <line x1="80" y1="20" x2="80" y2="140" stroke="#1a4a78" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="60" x2="120" y2="100" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="200" y1="60" x2="200" y2="180" stroke="#1a3a58" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- 标题 -->
+  <text x="150" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#333">
+    SVG 长方体 (Cuboid)
+  </text>
+</svg>

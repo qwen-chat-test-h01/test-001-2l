@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG 圆柱体</title>
+</head>
+<body>
+    <svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+        <!-- 定义渐变 -->
+        <defs>
+            <!-- 圆柱体侧面渐变 -->
+            <linearGradient id="cylinderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#666666;stop-opacity:0.3" />
+                <stop offset="50%" style="stop-color:#cccccc;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#666666;stop-opacity:0.3" />
+            </linearGradient>
+            
+            <!-- 顶部椭圆渐变 -->
+            <radialGradient id="topGradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+                <stop offset="100%" style="stop-color:#999999;stop-opacity:0.7" />
+            </radialGradient>
+        </defs>
+        
+        <!-- 圆柱体主体（矩形） -->
+        <rect x="75" y="100" width="150" height="250" fill="url(#cylinderGradient)" stroke="#333333" stroke-width="2"/>
+        
+        <!-- 圆柱体顶部椭圆 -->
+        <ellipse cx="150" cy="100" rx="75" ry="30" fill="url(#topGradient)" stroke="#333333" stroke-width="2"/>
+        
+        <!-- 圆柱体底部椭圆（只显示前半部分） -->
+        <path d="M 75 350 A 75 30 0 0 0 225 350" fill="none" stroke="#333333" stroke-width="2"/>
+        
+        <!-- 高光效果 -->
+        <ellipse cx="150" cy="100" rx="60" ry="20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+        
+        <!-- 添加阴影 -->
+        <ellipse cx="150" cy="360" rx="75" ry="20" fill="#000000" opacity="0.2"/>
+    </svg>
+    
+    <div style="text-align: center; margin-top: 20px; font-family: Arial, sans-serif;">
+        <h2>SVG 圆柱体示例</h2>
+        <p>使用 SVG 绘制的三维圆柱体效果</p>
+    </div>
+</body>
+</html>
