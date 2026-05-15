@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-05-15T03:31:07.906929",
+  "total_products": 3,
+  "platforms": [
+    "淘宝",
+    "京东"
+  ],
+  "details": [
+    {
+      "platform": "淘宝",
+      "product_id": "P001",
+      "product_name": "智能手机 X1",
+      "success": true,
+      "timestamp": "2026-05-15T03:31:09.407927"
+    },
+    {
+      "platform": "淘宝",
+      "product_id": "P002",
+      "product_name": "无线蓝牙耳机",
+      "success": true,
+      "timestamp": "2026-05-15T03:31:10.408790"
+    },
+    {
+      "platform": "淘宝",
+      "product_id": "P003",
+      "product_name": "运动手表 Pro",
+      "success": true,
+      "timestamp": "2026-05-15T03:31:11.409536"
+    },
+    {
+      "platform": "京东",
+      "product_id": "P001",
+      "product_name": "智能手机 X1",
+      "success": true,
+      "timestamp": "2026-05-15T03:31:13.410888"
+    },
+    {
+      "platform": "京东",
+      "product_id": "P002",
+      "product_name": "无线蓝牙耳机",
+      "success": true,
+      "timestamp": "2026-05-15T03:31:14.411602"
+    },
+    {
+      "platform": "京东",
+      "product_id": "P003",
+      "product_name": "运动手表 Pro",
+      "success": true,
+      "timestamp": "2026-05-15T03:31:15.412292"
+    }
+  ],
+  "summary": {
+    "total_success": 6,
+    "total_failed": 0,
+    "success_rate": "100.00%"
+  }
+}
